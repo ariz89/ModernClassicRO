@@ -1,0 +1,10 @@
+prontera,164,125,6	script	Shopaholic	4_M_03,{
+	//if( getbattleflag( "feature.refineui" ) ){
+		mes "[Shopaholic]";
+		mes "test";
+		mes "test";
+		close2;
+		//refineui();
+		searchstores 1,0;
+		end;
+	}

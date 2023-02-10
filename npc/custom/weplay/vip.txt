@@ -1,0 +1,285 @@
+izlude,134,91,4	script	VIP Employee	117,{
+if (getgroupid()<4) {
+mes "[VIP Employee]";
+mes "Welcome to the VIP Corporation, you don't have the privilege to use this NPC.";
+close;
+}
+mes "[VIP Employee]";
+mes "Welcome to the VIP Corporation. The VIP services are always on your side. How may I assist you?";
+next;
+switch(select("Heal and Buff -> 1,000 z:Repair -> 5,000 z:Use Teleport Service:Cancel")) {
+case 1:
+	mes "[VIP Employee]";
+	if( Zeny < 1000 ) {
+		mes "I'm sorry, but you don't have enough zeny to use the Healer/Buff Service. Our fee is 1,000 zeny.";
+		close;
+		}
+		set Zeny,Zeny - 1000;
+		specialeffect2 EF_INCAGILITY;
+		sc_start SC_INCREASEAGI,240000,10;
+		specialeffect2 EF_BLESSING;
+		sc_start SC_BLESSING,240000,10;
+		sc_start SC_STRFOOD,1800000,10;
+		sc_start SC_AGIFOOD,1800000,10;
+		sc_start SC_INTFOOD,1800000,10;
+		sc_start SC_DEXFOOD,1800000,10;
+		sc_start SC_LUKFOOD,1800000,10;
+		sc_start SC_VITFOOD,1800000,10;
+		//sc_start SC_ALMIGHTY,1800000,10;
+		percentheal 100,100;
+		mes "Thank you for using the VIP Service.";
+		close;
+		
+case 2:
+		mes "[VIP Employee]";
+		if( Zeny < 5000) {
+		mes "I'm sorry, but you don't have enough zeny to use the Repair Service. Our fee is 5,000 zeny.";
+		close;
+		}
+		//set Zeny,Zeny - 5000;
+		if ( getbrokenid(1) ) {
+		set Zeny,Zeny - 5000;
+		repairall;
+		mes "Thank you for using the VIP Service.";
+		close;
+		}
+		else{ mes "Nothing to repair.";
+		close;
+}	
+case 3:
+//	set @lvlselect,0;
+//	set .paymentT, 1000;
+//	set .paymentD, 5000;
+	
+	callfunc "F_ClearGarbage"; //Clear outdated, unused variables
+
+	mes "[VIP Employee]";
+	mes "Please choose your destination.";
+	next;
+	switch(select("Town -> 1,000 z:Dungeon -> 2,000 z:Cancel")) {
+		case 1:
+			switch(select("Alberta:Aldebaran:Comodo:Geffen:Izlude:Lutie:Morroc:Payon:Prontera:Yuno")) {
+				case 1:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "alberta",117,56;
+					break;
+				case 2:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "aldebaran",168,112;
+					break;
+				case 3:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "comodo",209,143;
+					break;
+				case 4:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "geffen",120,39;
+					break;
+				case 5:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "izlude",91,105;
+					break;
+				case 6:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "xmas",147,132;
+					break;
+				case 7:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "morocc",156,46;
+					break;
+				case 8:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "payon",152,75;
+					break;
+				case 9:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "prontera",116,72;
+					break;
+				case 10:
+					if( Zeny < 1000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 1,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 1000;
+					warp "yuno",157,51;
+					break;
+			}
+			break;
+		case 2:
+			//mes "[Warp Agent]";
+			//mes "Please select which dungeon you would like to be teleported to.";
+			//next;
+			switch(select("Ant Hell:Baylan Island:Glastheim:Labyrinth Forest:Nogg Road:Orc Dungeon:Payon Cave:Prontera Culvert:Pryamid:Sphinx:Sunken Ship:Toy Factory Warehouse:Turtle Island Dungeon")) {
+				case 1:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "cmd_fild08",330,355;
+					break;
+				case 2:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "izlu2dun",108,88;
+					break;
+				case 3:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "gef_fild06",27,304;
+					break;
+				case 4:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "prt_fild01",136,369;
+					break;
+				case 5:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "yuno_fild03",36,139;
+					break;
+				case 6:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "in_orcs01",30,178;
+					break;
+				case 7:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "pay_arche",41,131;
+					break;
+				case 8:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "prt_fild05",274,208;
+					break;
+				case 9:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "moc_ruins",60,161;
+					break;
+				case 10:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "moc_fild19",102,99;
+					break;
+				case 11:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "alb2trea",85,107;
+					break;
+				case 12:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "xmas",143,311;
+					break;
+				case 13:
+					if( Zeny < 2000 ) {
+					mes "[VIP Employee]";
+					mes "I'm sorry, but you don't have enough zeny to use the Teleport Service. Our fee is 2,000 zeny.";
+					close;
+					}
+					set Zeny,Zeny - 2000;
+					warp "tur_dun01",154,236;
+					break;
+			}
+			break;
+	}
+	end;
+case 4:
+		mes "[VIP Employee]";
+		mes "Thank you for using the VIP Service.";
+		close;
+		}
+}

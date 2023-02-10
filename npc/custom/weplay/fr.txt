@@ -1,0 +1,52 @@
+// Author: Lupus
+// Edited: _Okuz_
+-	script	Weekend Floating Exp	-1,{
+
+OnInit:
+	// To force the event to run even if you have to shutdown your server for some reason...
+	if (gettime(4) != 5 && gettime(4) != 6 && gettime(4) != 0) end;
+
+OnFri0000:
+	// start double rates on Friday 00:00
+	//setbattleflag "base_exp_rate", getbattleflag("base_exp_rate") * 2;
+	//setbattleflag "job_exp_rate", getbattleflag("job_exp_rate") * 2;
+	//setbattleflag "item_rate_heal", getbattleflag("item_rate_heal") * 2;
+	//setbattleflag "item_rate_use", getbattleflag("item_rate_use") * 2;
+	//setbattleflag "item_rate_equip", getbattleflag("item_rate_equip") * 2;
+	//setbattleflag "item_rate_card", getbattleflag("item_rate_card") * 2;
+	//setbattleflag "item_rate_mvp", getbattleflag("item_rate_mvp") * 2;
+	//setbattleflag "item_rate_adddrop", getbattleflag("item_rate_adddrop") * 2;
+	//setbattleflag "item_rate_treasure", getbattleflag("item_rate_treasure") * 2;
+	setbattleflag("base_exp_rate",200,true);
+	setbattleflag("job_exp_rate",200,true);
+	setbattleflag("item_rate_common",125,true);
+	setbattleflag("item_rate_heal",125,true);
+	setbattleflag("item_rate_use",125,true);
+	setbattleflag("item_rate_equip",125,true);
+	setbattleflag("item_rate_card",125,true);
+	//atcommand "@reloadmobdb";
+	//announce "[Event] : Double rates enabled!",bc_all,0xFF6060;
+	end;
+
+OnSun2359:
+	// stop double rates on Monday 00:00
+	setbattleflag("base_exp_rate",100,true);
+	setbattleflag("job_exp_rate",100,true);
+	setbattleflag("item_rate_common",100,true);
+	setbattleflag("item_rate_heal",100,true);
+	setbattleflag("item_rate_use",100,true);
+	setbattleflag("item_rate_equip",100,true);
+	setbattleflag("item_rate_card",100,true);
+	//setbattleflag "base_exp_rate", getbattleflag("base_exp_rate");
+	//setbattleflag "job_exp_rate", getbattleflag("job_exp_rate");
+	//setbattleflag "item_rate_heal", getbattleflag("item_rate_heal");
+	//setbattleflag "item_rate_use", getbattleflag("item_rate_use");
+	//setbattleflag "item_rate_equip", getbattleflag("item_rate_equip");
+	//setbattleflag "item_rate_card", getbattleflag("item_rate_card");
+	//setbattleflag "item_rate_mvp", getbattleflag("item_rate_mvp");
+	//setbattleflag "item_rate_adddrop", getbattleflag("item_rate_adddrop");
+	//setbattleflag "item_rate_treasure", getbattleflag("item_rate_treasure");
+	//atcommand "@reloadmobdb";
+	//announce "[Event] : Double rates disabled!",bc_all,0xFF6060;
+	end;
+}
