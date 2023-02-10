@@ -179,6 +179,8 @@ Body:
     Inherit:
       Player: true
     Level: 0
+    Permissions:
+      all_commands: true
     Commands:
       rates: true
       who: true

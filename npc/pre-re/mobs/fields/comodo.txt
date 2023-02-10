@@ -14,46 +14,66 @@
 //==================================================
 // cmd_fild01 - Papuchicha Forest
 //==================================================
-cmd_fild01,0,0	monster	Alligator	1271,60
-cmd_fild01,0,0	monster	Savage	1166,30
-cmd_fild01,0,0	monster	Poporing	1031,30
-cmd_fild01,0,0	monster	Poison Spore	1077,20
-cmd_fild01,313,213,10,10	monster	Shining Plant	1083,1,1800000,900000
-cmd_fild01,313,213,10,10	monster	Blue Plant	1079,1,1800000,900000
-cmd_fild01,171,339,10,10	monster	Blue Plant	1079,2,1800000,900000
-cmd_fild01,72,78,10,10	monster	Blue Plant	1079,2,1800000,900000
-cmd_fild01,194,176,20,20	monster	Blue Plant	1079,1,1800000,900000
-cmd_fild01,0,0	monster	Green Plant	1080,5,1800000,900000
+//cmd_fild01,0,0	monster	Alligator	1271,60
+//cmd_fild01,0,0	monster	Savage	1166,30
+//cmd_fild01,0,0	monster	Poporing	1031,30
+//cmd_fild01,0,0	monster	Poison Spore	1077,20
+//cmd_fild01,313,213,10,10	monster	Shining Plant	1083,1,1800000,900000
+//cmd_fild01,313,213,10,10	monster	Blue Plant	1079,1,1800000,900000
+//cmd_fild01,171,339,10,10	monster	Blue Plant	1079,2,1800000,900000
+//cmd_fild01,72,78,10,10	monster	Blue Plant	1079,2,1800000,900000
+//cmd_fild01,194,176,20,20	monster	Blue Plant	1079,1,1800000,900000
+//cmd_fild01,0,0	monster	Green Plant	1080,5,1800000,900000
+cmd_fild01,0,0	monster	Alligator	1271,70
+cmd_fild01,0,0	monster	Poison Spore	1077,60
+cmd_fild01,0,0	monster	Cookie	1265,45
+cmd_fild01,0,0	monster	Rocker	1052,45
+cmd_fild01,0,0	monster	Poporing	1031,40
+cmd_fild01,0,0	monster	Greatest General	1277,10
+cmd_fild01,0,0	monster	Vocal	1088,1,1020000,2820000
 
 //==================================================
 // cmd_fild02 - Kokomo Beach
 //==================================================
+//cmd_fild02,73,100,40,100	monster	Aster	1266,5
+//cmd_fild02,200,130,150,50	monster	Aster	1266,5
+//cmd_fild02,0,0	monster	Crab	1073,20
+//cmd_fild02,0,0	monster	Alligator	1271,10
+//cmd_fild02,0,0	monster	Raggler	1254,30
+//cmd_fild02,94,85,40,80	monster	Raggler	1254,2,60000
+//cmd_fild02,95,89,40,80	monster	Cornutus	1067,5,180000
+//cmd_fild02,279,78,100,20	monster	Cornutus	1067,10,60000
+//cmd_fild02,0,0	monster	Shellfish	1074,35
+//cmd_fild02,93,82,40,80	monster	Shellfish	1074,5,180000
+//cmd_fild02,0,0	monster	Mobster	1313,1
+//cmd_fild02,200,130,150,40	monster	Seal	1317,18
+//cmd_fild02,93,82,40,80	monster	Seal	1317,2,180000
+//cmd_fild02,0,0	monster	Galapago	1391,20
+cmd_fild02,200,130,150,40	monster	Seal	1317,88
+cmd_fild02,93,82,40,80	monster	Seal	1317,2
+cmd_fild02,0,0	monster	Raggler	1254,40
+cmd_fild02,94,85,40,80	monster	Raggler	1254,2
+cmd_fild02,0,0	monster	Shellfish	1074,35
+cmd_fild02,93,82,40,80	monster	Shellfish	1074,5
+cmd_fild02,0,0	monster	Crab	1073,30
+cmd_fild02,0,0	monster	Galapago	1391,30
+cmd_fild02,95,89,40,80	monster	Cornutus	1067,5,1000,60000
+cmd_fild02,279,78,100,20	monster	Cornutus	1067,10,1000,60000
 cmd_fild02,73,100,40,100	monster	Aster	1266,5
 cmd_fild02,200,130,150,50	monster	Aster	1266,5
-cmd_fild02,0,0	monster	Crab	1073,20
-cmd_fild02,0,0	monster	Alligator	1271,10
-cmd_fild02,0,0	monster	Raggler	1254,30
-cmd_fild02,94,85,40,80	monster	Raggler	1254,2,60000
-cmd_fild02,95,89,40,80	monster	Cornutus	1067,5,180000
-cmd_fild02,279,78,100,20	monster	Cornutus	1067,10,60000
-cmd_fild02,0,0	monster	Shellfish	1074,35
-cmd_fild02,93,82,40,80	monster	Shellfish	1074,5,180000
-cmd_fild02,0,0	monster	Mobster	1313,1
-cmd_fild02,200,130,150,40	monster	Seal	1317,18
-cmd_fild02,93,82,40,80	monster	Seal	1317,2,180000
-cmd_fild02,0,0	monster	Galapago	1391,20
+cmd_fild02,0,0	monster	Mobster	1313,1,1000,2400000
 
 //==================================================
 // cmd_fild03 - Zenhai Marsh
 //==================================================
-cmd_fild03,0,0	monster	Mutant Dragonoid	1262,1
-cmd_fild03,0,0	monster	Pest	1256,30
-cmd_fild03,0,0	monster	Poporing	1031,10
-cmd_fild03,0,0	monster	Anolian	1206,90
-cmd_fild03,0,0	monster	Toad	1089,1,3600000,1800000
-cmd_fild03,356,232,3,3	monster	Shining Plant	1083,1,1800000,900000
-cmd_fild03,262,289,3,3	monster	Shining Plant	1083,1,1800000,900000
-cmd_fild03,145,191,3,3	monster	Shining Plant	1083,1,1800000,900000
+//cmd_fild03,0,0	monster	Mutant Dragonoid	1262,1
+//cmd_fild03,0,0	monster	Pest	1256,30
+//cmd_fild03,0,0	monster	Poporing	1031,10
+//cmd_fild03,0,0	monster	Anolian	1206,90
+//cmd_fild03,0,0	monster	Toad	1089,1,3600000,1800000
+//cmd_fild03,356,232,3,3	monster	Shining Plant	1083,1,1800000,900000
+//cmd_fild03,262,289,3,3	monster	Shining Plant	1083,1,1800000,900000
+//cmd_fild03,145,191,3,3	monster	Shining Plant	1083,1,1800000,900000
 
 //==================================================
 // cmd_fild04 - Kokomo Beach
