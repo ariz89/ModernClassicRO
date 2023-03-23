@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/map/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Runtime_mapserver",
+			"destination" : ".",
+			"paths" : 
+			[
+				"C:/Users/P101LWPH1/Desktop/classic/map-server.exe"
+			],
+			"targetId" : "map-server::@49e5eb6817f363ea937d",
+			"targetIndex" : 8,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/map",
+		"source" : "src/map"
+	}
+}
